@@ -13,9 +13,16 @@ html, body {
     padding: 100px 0px 0px 0px;
 }
 
+img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 h1, h2 {
     margin: 0px;
-    padding: 10px;
+    padding: 10px 20px;
 }
 
 #intro-title {
@@ -32,4 +39,22 @@ h1, h2 {
     padding: 10px 10px;
     background: rgba(0, 82, 155, 0.75);
     border-radius: 10px;
+}
+
+#content {
+    color:#003A6D;
+    background: #B3D7F2;
+}
+
+#content-title {
+    padding: 40px 20px;
+}
+
+#activity-grid {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.activity-column {
+    width: 150px;
 }
