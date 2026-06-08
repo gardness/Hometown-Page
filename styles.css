@@ -25,6 +25,10 @@ h1, h2 {
     padding: 10px 20px;
 }
 
+p {
+    font-size: 15px;
+}
+
 #intro-title {
     width: 300px;
     margin: 0 auto;
@@ -33,7 +37,9 @@ h1, h2 {
     border-radius: 10px;
 }
 
-#intro-subtitle {
+#intro-body {
+    font-size: 20px;
+    font-weight: bold;
     width: 400px;
     margin: 20px auto;
     padding: 10px 10px;
@@ -60,3 +66,5 @@ h1, h2 {
 .activity-column {
     width: 150px;
 }
+
+//TODO: Make the titles center and flexible
