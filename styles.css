@@ -44,10 +44,12 @@ h1, h2 {
 #content {
     color:#003A6D;
     background: #B3D7F2;
+    padding: 10px 10px;
 }
 
 #content-title {
     padding: 40px 20px;
+    font-size: 25px;
 }
 
 #activity-grid {
