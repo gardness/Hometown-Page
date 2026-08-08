@@ -22,7 +22,7 @@ img {
     border-radius: 50%;
 }
 
-#intro {
+.downtown-bg {
     background-image: URL("images/vancouver-skyline.jpg");
     background-size: cover;
     padding: 40px;
@@ -30,30 +30,20 @@ img {
     flex-direction: column;
 }
 
-h1,
-h2 {
-    margin: 0px;
-    padding: 10px 20px;
-}
-
-p {
-    font-size: 15px;
-}
-
-#intro-title {
-    width: 300px;
-    margin: 0 auto;
+.downtown-bg h1 {
+    max-inline-size: 400px;
+    margin-inline: auto;
     padding: 10px 10px;
     color: #f8fafc;
     background: rgba(0, 82, 155, 0.75);
     border-radius: 10px;
 }
 
-#intro-body {
-    font-size: 20px;
+.downtown-bg p {
+    font-size: 1.5rem;
     font-weight: bold;
-    width: 400px;
-    margin: 20px auto;
+    max-inline-size: 400px;
+    margin-inline: auto;
     padding: 10px 10px;
     color: #f8fafc;
     background: rgba(0, 82, 155, 0.75);
@@ -81,7 +71,7 @@ p {
 }
 
 #card {
-    width: 400px;
+    max-inline-size: 400px;
     margin: 20px auto;
     padding: 20px;
     display: flex;
