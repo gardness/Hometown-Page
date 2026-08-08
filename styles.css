@@ -1,26 +1,33 @@
-*, *::before, *::after { box-sizing: inherit; }
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
 
 html,
 body {
     box-sizing: border-box;
-    margin: 0;
     text-align: center;
     font-family: "Elms Sans", sans-serif;
     font-size: small;
+    background-color: #94a9d6;
+}
+
+img {
+    display: block;
+    max-inline-size: 100%;
+    inline-size: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 #intro {
     background-image: URL("images/vancouver-skyline.jpg");
     background-size: cover;
-    height: 300px;
-    padding: 100px 0px 0px 0px;
-}
-
-img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 h1,
