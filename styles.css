@@ -23,17 +23,22 @@ img {
 }
 
 .downtown-bg {
+    background-color: #036bc6;
     background-image: URL("images/vancouver-skyline.jpg");
+    background-position: center;
     background-size: cover;
-    padding: 40px;
+    border: 6px solid #036bc6;
+    padding: 20px;
+    margin-block-end: 10px;
+    min-block-size: 350px;
     display: flex;
     flex-direction: column;
 }
 
-.downtown-bg h1 {
+.downtown-bg :is(h1, p) {
     max-inline-size: 400px;
-    margin-inline: auto;
-    padding: 10px 10px;
+    margin: 30px auto;
+    padding: 20px 10px;
     color: #f8fafc;
     background: rgba(0, 82, 155, 0.75);
     border-radius: 10px;
@@ -42,12 +47,9 @@ img {
 .downtown-bg p {
     font-size: 1.5rem;
     font-weight: bold;
-    max-inline-size: 400px;
-    margin-inline: auto;
     padding: 10px 10px;
     color: #f8fafc;
     background: rgba(0, 82, 155, 0.75);
-    border-radius: 10px;
 }
 
 #content {
