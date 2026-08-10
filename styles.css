@@ -89,12 +89,25 @@ img {
     margin-inline: auto;
 }
 
-#card {
-    max-inline-size: 400px;
+.card {
     margin: 20px auto;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
+    padding: 40px;
+    display: grid;
+    margin-inline: auto;
     background: #ddebf8;
-    border-radius: 8px;
+    border: 6px solid #94c9fa;
+    border-radius: var(--primary-radius);
+
+    @media (width >=768px) {
+        grid-template-columns: 0.5fr 1fr;
+    }
+}
+
+.card img {
+    margin: 20px auto;
+}
+
+.card-text {
+    margin-inline: auto;
+    max-inline-size: 300px;
 }
