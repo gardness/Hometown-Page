@@ -4,6 +4,10 @@
     box-sizing: inherit;
 }
 
+:root {
+    --primary-radius: 8px;
+}
+
 html,
 body {
     box-sizing: border-box;
@@ -11,6 +15,7 @@ body {
     font-family: "Elms Sans", sans-serif;
     font-size: small;
     background-color: #94a9d6;
+    margin: 20px;
 }
 
 img {
@@ -29,19 +34,19 @@ img {
     background-size: cover;
     border: 6px solid #036bc6;
     padding: 20px;
-    margin-block-end: 10px;
     min-block-size: 350px;
     display: flex;
     flex-direction: column;
+    border-radius: var(--primary-radius);
 }
 
 .downtown-bg :is(h1, p) {
     max-inline-size: 400px;
     margin: 30px auto;
-    padding: 20px 10px;
+    padding: 20px;
     color: #f8fafc;
     background: rgba(0, 82, 155, 0.75);
-    border-radius: 10px;
+    border-radius: var(--primary-radius);
 }
 
 .downtown-bg p {
@@ -52,24 +57,36 @@ img {
     background: rgba(0, 82, 155, 0.75);
 }
 
-#content {
+.content {
     color: #003A6D;
     background: #B3D7F2;
-    padding: 10px 10px;
+    padding: 40px 40px;
+    margin-block: 40px;
+    border: 6px solid #4395d4;
+    border-radius: var(--primary-radius);
 }
 
-#content-title {
-    padding: 40px 20px;
-    font-size: 25px;
+.content h2 {
+    font-size: 2rem;
 }
 
-#activity-grid {
-    display: flex;
-    justify-content: space-evenly;
+.three-column-layout {
+    display: grid;
+    margin-inline: auto;
+
+    @media (width >=768px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
 }
 
-.activity-column {
-    width: 150px;
+.three-column-layout article {
+    max-inline-size: 200px;
+    margin: 20px auto;
+}
+
+.three-column-layout img {
+    margin-inline: auto;
 }
 
 #card {
@@ -81,5 +98,3 @@ img {
     background: #ddebf8;
     border-radius: 8px;
 }
-
-/* TODO: Make the titles center and flexible */
