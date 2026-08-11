@@ -13,16 +13,29 @@ body {
     box-sizing: border-box;
     text-align: center;
     font-family: "Elms Sans", sans-serif;
-    font-size: small;
     background-color: #94a9d6;
-    margin: 20px;
+    padding: clamp(1rem, 4vw, 2rem);
+}
+
+body>* {
+    max-inline-size: 70rem;
+    margin-inline: auto;
+}
+
+p {
+    line-height: 1.5;
 }
 
 img {
     display: block;
     max-inline-size: 100%;
+    block-size: auto;
+}
+
+.three-column-layout img,
+.card img {
     inline-size: 100px;
-    height: 100px;
+    aspect-ratio: 1;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -94,6 +107,7 @@ img {
     padding: 40px;
     display: grid;
     margin-inline: auto;
+    max-inline-size: 42rem;
     background: #ddebf8;
     border: 6px solid #94c9fa;
     border-radius: var(--primary-radius);
